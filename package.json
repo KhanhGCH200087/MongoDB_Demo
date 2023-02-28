@@ -6,11 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhanhGCH200087/MongoDB_Demo.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhanhGCH200087/MongoDB_Demo/issues"
+  },
+  "homepage": "https://github.com/KhanhGCH200087/MongoDB_Demo#readme",
   "dependencies": {
     "express": "^4.18.2",
     "hbs": "^4.2.0",
-    "mongodb": "^5.0.1"
+    "mongodb": "^5.1.0"
   }
 }
