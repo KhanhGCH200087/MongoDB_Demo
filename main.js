@@ -78,8 +78,8 @@ app.get('/', async (req, res)=>{ //để dùng đc hàm await thì cần hàm as
     res.render('main',{'products':products})
 })
 
-const PORT = 8000
-//const PORT = process.env.PORT
+//const PORT = 8000
+const PORT = process.env.PORT
 app.listen(PORT,()=>{
     console.log("Server running at " + PORT)
 })
