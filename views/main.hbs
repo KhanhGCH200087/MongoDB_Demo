@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the test</h1>
+    <ol>
+        {{#each products}}
+            <li>
+                {{this.name }} - {{this.Price}}
+                <img src="{{picURL}}" width="100" height="100">
+                <a href="/delete/{{_id}}" onclick="return confirm ('Delete or not')">Delete</a>
+                <a href="/edit/{{_id}}">Edit</a> 
+                {{!-- để có thể delete cần cho id của sap đó vào  --}}
+            </li>
+           
+        {{/each}}
+    </ol>
+   
+    <a href="/add">Add</a>
+</body>
+</html>
